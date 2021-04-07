@@ -26,7 +26,7 @@ export const Navbar = () => {
   return (
     <div className="Navbar">
       <div className="topnav" id="myTopnav">
-        <a href="#" className="home">
+        <a href="#home" className="home">
           <div className="company">
             <img
               className="rotate-center"
@@ -39,11 +39,11 @@ export const Navbar = () => {
           </div>
         </a>
         <div className="right-sec">
-          <a href="#BandPage">ABOUT US</a>
-          <a href="#TimelinePage">SERVICES</a>
-          <a href="#MediaPage">PROJECTS</a>
-          <a href="#MusicPage">CUSTOMERS</a>
-          <a href="#OoraliexpressPage">CONTACT US</a>
+          <a href="#aboutus">ABOUT US</a>
+          <a href="#services">SERVICES</a>
+          <a href="#whyus">WHY US</a>
+          <a href="#customers">CUSTOMERS</a>
+          <a href="#contactus">CONTACT US</a>
         </div>
         <div className="icon">
           {/* <img src={MdMenu} alt="menu" onClick={myFunction} width="25px" /> */}

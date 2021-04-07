@@ -6,7 +6,7 @@ export const ServicesSec = () => {
   const [viewmore, setviewmore] = useState(4);
 
   return (
-    <div className="ServicesSec">
+    <div className="ServicesSec" id="services">
       <div className="title">Our Services</div>
       <div className="underline">
         <ul>

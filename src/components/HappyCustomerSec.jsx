@@ -5,7 +5,7 @@ import "./HappyCustomerSec.scss";
 
 export const HappyCustomerSec = () => {
   return (
-    <div className="HappyCustomerSec">
+    <div className="HappyCustomerSec" id="customers">
       <div className="title">Our Happy Customers</div>
       <div className="underline">
         <ul>

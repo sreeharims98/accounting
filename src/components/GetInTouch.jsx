@@ -36,7 +36,7 @@ export const GetInTouch = () => {
   };
 
   return (
-    <div className="GetInTouch">
+    <div className="GetInTouch" id="contactus">
       <div className="title">Get In Touch</div>
       <div className="underline">
         <ul>

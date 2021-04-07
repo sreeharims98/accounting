@@ -3,7 +3,7 @@ import "./IntroductionSec.scss";
 
 export const IntroductionSec = () => {
   return (
-    <div className="IntroductionSec">
+    <div className="IntroductionSec" id="aboutus">
       <div className="title">Introduction Company Name</div>
       <div className="underline">
         <ul>

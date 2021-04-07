@@ -4,7 +4,7 @@ import bg1 from "../images/1.jpg";
 
 export const HomeBg = () => {
   return (
-    <div className="HomeBg">
+    <div className="HomeBg" id="home">
       {/* <img src={bg1} alt="background" /> */}
       <div className="text-above">
         <div className="title">ENTER YOUR TITLE</div>

@@ -3,7 +3,7 @@ import "./WhyUsSec.scss";
 
 export const WhyUsSec = () => {
   return (
-    <div className="WhyUsSec">
+    <div className="WhyUsSec" id="whyus">
       <div className="text-above">
         <div className="title">Why Choose Us?</div>
         <div className="underline">
