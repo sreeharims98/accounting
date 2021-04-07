@@ -39,11 +39,21 @@ export const Navbar = () => {
           </div>
         </a>
         <div className="right-sec">
-          <a href="#aboutus">ABOUT US</a>
-          <a href="#services">SERVICES</a>
-          <a href="#whyus">WHY US</a>
-          <a href="#customers">CUSTOMERS</a>
-          <a href="#contactus">CONTACT US</a>
+          <a href="#aboutus" onClick={myFunction}>
+            ABOUT US
+          </a>
+          <a href="#services" onClick={myFunction}>
+            SERVICES
+          </a>
+          <a href="#whyus" onClick={myFunction}>
+            WHY US
+          </a>
+          <a href="#customers" onClick={myFunction}>
+            CUSTOMERS
+          </a>
+          <a href="#contactus" onClick={myFunction}>
+            CONTACT US
+          </a>
         </div>
         <div className="icon">
           {/* <img src={MdMenu} alt="menu" onClick={myFunction} width="25px" /> */}
