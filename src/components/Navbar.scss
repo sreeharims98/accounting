@@ -1,0 +1,117 @@
+.Navbar {
+  // padding-bottom: 67px;
+  background-color: #302e4e;
+  z-index: 20;
+  // position: absolute;
+  .main-logo {
+    padding: 0;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #302e4e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    transition: all ease-in-out 0.3s;
+  }
+  .topnav {
+    .home {
+      padding: 1rem;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      transition: all ease-in-out 0.2s;
+      .company {
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .topnav {
+    .right-sec {
+      a {
+        color: #ffffff;
+        padding: 1rem;
+        // padding-top: 0.5rem;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        transition: all ease 0.2s;
+      }
+    }
+  }
+
+  .topnav {
+    .right-sec {
+      a:hover {
+        color: #ffffff;
+        // border-top: 1px solid #ffffff;
+        background-color: #0a6db7;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .topnav a.active {
+    background-color: #4caf50;
+    color: white;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .topnav .right-sec {
+      display: none;
+    }
+    .topnav .icon {
+      // padding: 1rem;
+      padding-right: 1rem;
+      display: block;
+      .hamburger {
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .topnav.responsive {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+    }
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 13px;
+      img {
+        cursor: pointer;
+      }
+    }
+    .topnav.responsive {
+      .right-sec {
+        width: 100%;
+
+        a {
+          padding: 1rem 0;
+          width: 100%;
+        }
+      }
+    }
+    .topnav.responsive .right-sec {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+    }
+  }
+}
