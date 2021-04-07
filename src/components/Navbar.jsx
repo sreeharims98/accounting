@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.scss";
-import { MdMenu } from "react-icons/md";
+import { MdMenu, MdClose } from "react-icons/md";
+
 import logo from "../images/logo.png";
 
 export const Navbar = () => {
+  const [nav, setnav] = useState("t");
+
   function myFunction() {
-    // window.scrollTo(0, 0);
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
+    window.scrollTo(0, 0);
+    nav === "t" ? setnav("tr") : setnav("t");
+    // var x = document.getElementById("myTopnav");
+    // if (x.className === "topnav") {
+    //   x.className += " responsive";
+    // } else {
+    //   x.className = "topnav";
+    // }
   }
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function () {
@@ -25,7 +29,10 @@ export const Navbar = () => {
   };
   return (
     <div className="Navbar">
-      <div className="topnav" id="myTopnav">
+      <div
+        className={nav === "t" ? "topnav" : "topnav responsive"}
+        id="myTopnav"
+      >
         <a href="#home" className="home">
           <div className="company">
             <img
@@ -57,11 +64,20 @@ export const Navbar = () => {
         </div>
         <div className="icon">
           {/* <img src={MdMenu} alt="menu" onClick={myFunction} width="25px" /> */}
-          <MdMenu
-            onClick={myFunction}
-            style={{ color: "white", fontSize: "2rem" }}
-            className="hamburger"
-          />
+
+          {nav === "t" ? (
+            <MdMenu
+              onClick={myFunction}
+              style={{ color: "white", fontSize: "2rem" }}
+              className="hamburger"
+            />
+          ) : (
+            <MdClose
+              onClick={myFunction}
+              style={{ color: "white", fontSize: "2rem" }}
+              className="hamburger"
+            />
+          )}
         </div>
       </div>
     </div>
