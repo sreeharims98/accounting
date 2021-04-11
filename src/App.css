@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #409b2d;
+  --primary-color-dark: #2d6e20;
+  --secondary-color: #0a6db7;
+  --ternary-color: #302e4e;
+}
 .App {
   font-family: "Roboto", sans-serif;
 }
@@ -9,7 +15,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  line-height: 1.8;
+  line-height: 1.5;
   word-wrap: break-word;
 }
 *:focus {

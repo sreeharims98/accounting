@@ -6,7 +6,7 @@
   padding: 4rem 0;
   background-color: #fff;
   .title {
-    color: #0a6db7;
+    color: var(--secondary-color);
     font-size: 36px;
     // margin-bottom: 5px;
     font-weight: 700;
@@ -26,7 +26,7 @@
       margin: 0;
       padding: 0;
       li {
-        background: #0a6db7;
+        background: var(--secondary-color);
         height: 3px;
         display: inline-block;
         width: 36px;
@@ -38,7 +38,7 @@
     color: #696969;
     text-align: center;
     width: 90%;
-    max-width: 510px;
+    max-width: 720px;
     margin-top: 1rem;
   }
   .card-sec {
@@ -47,12 +47,14 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 1rem;
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
   }
   .view-more {
     .button {
       width: 160px;
       height: 50px;
-      background-color: #0a6db7;
+      background-color: var(--primary-color);
       border: none;
       border-radius: 8px;
       color: white;
@@ -60,7 +62,9 @@
       font-weight: 500;
       transition: all ease 0.3s;
       &:hover {
-        background-color: #253cac;
+        background-color: var(--primary-color-dark);
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1),
+          0 15px 12px rgba(0, 0, 0, 0.02);
       }
     }
   }

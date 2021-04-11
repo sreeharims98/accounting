@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.scss";
 import { MdMenu, MdClose } from "react-icons/md";
 
-import logo from "../images/logo.png";
+import logo from "../images/logo.jpg";
 
 export const Navbar = () => {
   const [nav, setnav] = useState("t");
@@ -41,7 +41,7 @@ export const Navbar = () => {
               alt="logoround"
               width="30px"
             />
-            <span>COMPANY NAME</span>
+            <span>Finoxen Stratagem</span>
             {/* <img src={logotext} alt="OORALI" width="auto" height="30px" /> */}
           </div>
         </a>

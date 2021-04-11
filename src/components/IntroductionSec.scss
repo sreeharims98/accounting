@@ -6,7 +6,7 @@
   background-color: #f7f7f7;
   padding: 4rem 0;
   .title {
-    color: #0a6db7;
+    color: var(--secondary-color);
     font-size: 36px;
     // margin-bottom: 5px;
     font-weight: 700;
@@ -26,7 +26,7 @@
       margin: 0;
       padding: 0;
       li {
-        background: #0a6db7;
+        background: var(--secondary-color);
         height: 3px;
         display: inline-block;
         width: 36px;
@@ -38,7 +38,7 @@
     color: #696969;
     text-align: center;
     width: 90%;
-    max-width: 510px;
+    max-width: 720px;
     margin-top: 1rem;
   }
 }

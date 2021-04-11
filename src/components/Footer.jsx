@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.scss";
-import logo from "../images/logo.png";
+import logo from "../images/logo.jpg";
 import {
   FaFacebookF,
   FaTwitter,
@@ -17,11 +17,11 @@ export const Footer = () => {
         <div className="company-sec">
           <a href="#home" className="company-name">
             <img src={logo} alt="logo" width="60px" />
-            <span>COMPANY NAME</span>
+            <span>Finoxen Stratagem</span>
           </a>
           <div className="company-about">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit earum
-            cum nostrum. Rerum et voluptatum illum delectus nesciunt enim quo?
+            Let's make an achievement meeting new heights and adding value to
+            the invested capital with "Finoxen Stratagem"
           </div>
           <div className="follow-us-sec">
             <span>Follow us</span>
