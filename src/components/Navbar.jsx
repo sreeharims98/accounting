@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.scss";
 import { MdMenu, MdClose } from "react-icons/md";
 
-import logo from "../images/logo.jpg";
+import logo from "../images/logo.png";
 
 export const Navbar = () => {
   const [nav, setnav] = useState("t");
