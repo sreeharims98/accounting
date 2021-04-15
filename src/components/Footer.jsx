@@ -1,6 +1,8 @@
 import React from "react";
 import "./Footer.scss";
 import logo from "../images/FINOXEN STRATAGEM.png";
+import logotext from "../images/FINOXEN STRATAGEM  text.png";
+
 import {
   FaFacebookF,
   FaTwitter,
@@ -17,6 +19,8 @@ export const Footer = () => {
         <div className="company-sec">
           <a href="#home" className="company-name">
             <img src={logo} alt="logo" width="60px" />
+            {/* <img src={logotext} alt="logo" height="10px" /> */}
+
             <span>Finoxen Stratagem</span>
           </a>
           <div className="company-about">

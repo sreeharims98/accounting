@@ -32,7 +32,8 @@
         span {
           font-size: 20px;
           font-weight: 500;
-          color: #ffffff;
+          color: var(--primary-color);
+          letter-spacing: 1px;
           display: flex;
           justify-content: center;
           align-items: center;
