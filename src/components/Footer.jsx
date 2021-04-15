@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.scss";
-import logo from "../images/logo.png";
+import logo from "../images/FINOXEN STRATAGEM.png";
 import {
   FaFacebookF,
   FaTwitter,

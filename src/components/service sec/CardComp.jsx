@@ -1,6 +1,6 @@
 import React from "react";
 import "./CardComp.scss";
-import logo from "../../images/logo.png";
+import logo from "../../images/FINOXEN STRATAGEM.png";
 import { MdClose } from "react-icons/md";
 
 export const CardComp = ({ onedata }) => {
