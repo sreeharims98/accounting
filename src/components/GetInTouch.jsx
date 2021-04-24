@@ -1,39 +1,38 @@
-import axios from "axios";
 import React, { useState } from "react";
+import { db } from "../config";
 import "./GetInTouch.scss";
 
 export const GetInTouch = () => {
-  const [name, setname] = useState("");
-  const [email, setemail] = useState("");
-  const [number, setnumber] = useState("");
-  const [message, setmessage] = useState("");
+  const [data, setdata] = useState({
+    name: "",
+    email: "",
+    number: "",
+    message: "",
+  });
+
+  // useEffect(() => {
+  //   db.ref("responses").on("value", (res) => {
+  //     console.log(res.val());
+  //   });
+  // }, []);
+
+  const onInputChange = (type, value) => {
+    let newData = { ...data };
+    newData[type] = value;
+    setdata(newData);
+  };
 
   const onsubmit = (e) => {
     e.preventDefault();
-
-    const data = new FormData();
-    data.append("name", name);
-    data.append("email", email);
-    data.append("number", number);
-    data.append("message", message);
-
-    axios({
-      method: "post",
-      url: `/`,
-      //   headers: {
-      //     Authorization: "Bearer " + token,
-      //     "Content-Type": "application/json",
-      //   },
-      data: data,
-    })
-      .then((res) => {
-        console.log(res.data);
-      })
-      .catch((err) => {
-        console.log(err.response);
-        alert(err);
-      });
+    let payload = { ...data, date: new Date().toString() };
+    db.ref("responses")
+      .push()
+      .set(payload)
+      .then((res) => {})
+      .catch((err) => console.log(err));
   };
+
+  const { name, email, number, message } = data;
 
   return (
     <div className="GetInTouch" id="contactus">
@@ -58,19 +57,19 @@ export const GetInTouch = () => {
               type="text"
               placeholder="Name"
               value={name}
-              onChange={(e) => setname(e.target.value)}
+              onChange={(e) => onInputChange("name", e.target.value)}
             />
             <input
               type="email"
               placeholder="Email"
               value={email}
-              onChange={(e) => setemail(e.target.value)}
+              onChange={(e) => onInputChange("email", e.target.value)}
             />
             <input
               type="number"
               placeholder="Phone number"
               value={number}
-              onChange={(e) => setnumber(e.target.value)}
+              onChange={(e) => onInputChange("number", e.target.value)}
             />
           </div>
           <div className="right-sec">
@@ -79,7 +78,7 @@ export const GetInTouch = () => {
               placeholder="Message"
               maxLength="500"
               value={message}
-              onChange={(e) => setmessage(e.target.value)}
+              onChange={(e) => onInputChange("message", e.target.value)}
             />
           </div>
         </div>
