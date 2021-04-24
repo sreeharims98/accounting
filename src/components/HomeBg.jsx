@@ -14,7 +14,9 @@ export const HomeBg = () => {
         <div className="sub-sub-title">
           Get your complete business compliance solution with us !
         </div>
-        <button className="button">GET QUOTE</button>
+        <a href="#contactus">
+          <button className="button"> GET QUOTE</button>
+        </a>
       </div>
     </div>
   );

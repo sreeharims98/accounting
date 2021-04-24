@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import { db } from "../config";
 import "./GetInTouch.scss";
+import { Input, message as msg } from "antd";
+
+const defaultData = {
+  name: "",
+  email: "",
+  number: "",
+  message: "",
+};
 
 export const GetInTouch = () => {
-  const [data, setdata] = useState({
-    name: "",
-    email: "",
-    number: "",
-    message: "",
-  });
+  const [data, setdata] = useState(defaultData);
 
   // useEffect(() => {
   //   db.ref("responses").on("value", (res) => {
@@ -28,8 +31,14 @@ export const GetInTouch = () => {
     db.ref("responses")
       .push()
       .set(payload)
-      .then((res) => {})
-      .catch((err) => console.log(err));
+      .then(() => {
+        msg.success("Your response has been successfully recorded");
+        setdata(defaultData);
+      })
+      .catch((err) => {
+        msg.error("An error occured !");
+        console.log(err);
+      });
   };
 
   const { name, email, number, message } = data;
@@ -53,19 +62,19 @@ export const GetInTouch = () => {
       <form onSubmit={onsubmit}>
         <div className="top-sec">
           <div className="left-sec">
-            <input
+            <Input
               type="text"
               placeholder="Name"
               value={name}
               onChange={(e) => onInputChange("name", e.target.value)}
             />
-            <input
+            <Input
               type="email"
               placeholder="Email"
               value={email}
               onChange={(e) => onInputChange("email", e.target.value)}
             />
-            <input
+            <Input
               type="number"
               placeholder="Phone number"
               value={number}
@@ -73,7 +82,7 @@ export const GetInTouch = () => {
             />
           </div>
           <div className="right-sec">
-            <textarea
+            <Input.TextArea
               type="text"
               placeholder="Message"
               maxLength="500"
