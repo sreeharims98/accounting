@@ -31,3 +31,37 @@ a {
   color: inherit;
   text-decoration: none;
 }
+.button {
+  width: 160px;
+  height: 50px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all ease 0.3s;
+}
+.button:hover {
+  background-color: var(--primary-color-dark);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.02);
+}
+.underline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.underline > ul {
+  display: inline-block;
+  margin-bottom: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.underline > ul > li {
+  background: var(--secondary-color);
+  height: 3px;
+  display: inline-block;
+  width: 36px;
+  margin-right: 6px;
+}

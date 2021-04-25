@@ -1,0 +1,47 @@
+.ContactUsSec {
+  padding-top: 2rem;
+  .title {
+    color: var(--secondary-color);
+    font-size: 36px;
+    // margin-bottom: 5px;
+    font-weight: 700;
+    text-align: center;
+    @media (max-width: 480px) {
+      font-size: 24px;
+    }
+  }
+
+  .loadingsec {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ant-card {
+    background: #eeeeee50;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 5px 2px rgba(0, 0, 0, 0.04);
+    margin: 2rem 0rem;
+  }
+  .ant-card-body {
+    @media (max-width: 480px) {
+      padding: 10px 0px;
+    }
+  }
+  span {
+    word-break: break-all;
+    margin: 0.5rem 1rem;
+  }
+  .date {
+    word-break: break-all;
+    color: #00000060;
+    margin: 0.5rem 1rem;
+  }
+  .contact-icon {
+    font-size: 1.5rem;
+    margin: 0.5rem 1rem;
+    color: var(--primary-color);
+  }
+}

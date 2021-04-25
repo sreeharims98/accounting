@@ -65,32 +65,8 @@ const SlickCustomerSec = () => {
     ],
   };
 
-  //   const URL = process.env.REACT_APP_URL;
-  //   const [token, settoken] = React.useState("");
-  //   const [rows, setrows] = React.useState([]);
-  //   const [isloading, setisloading] = React.useState(true);
-
-  //   React.useEffect(() => {
-  //     const token = localStorage.getItem("icantoken");
-  //     Axios.get(`${URL}/corporate/requirement/?status=pending`, {
-  //       headers: {
-  //         Authorization: "Bearer " + token,
-  //       },
-  //     })
-  //       .then((res) => {
-  //         console.log(res.data.data);
-  //         setrows(res.data.data);
-  //         setisloading(false);
-  //       })
-  //       .catch((err) => {
-  //         console.log(err.response);
-  //         alert(err);
-  //       });
-  //   }, []);
-
   return (
     <div className="SlickCustomerSec">
-      {/* <div className="title-style">{title}</div> */}
       <Slider {...settings}>
         <div>
           <div

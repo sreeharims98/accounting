@@ -55,21 +55,5 @@
         font-size: 16px;
       }
     }
-    .button {
-      width: 160px;
-      height: 50px;
-      background-color: var(--primary-color);
-      border: none;
-      border-radius: 8px;
-      color: white;
-      cursor: pointer;
-      font-weight: 500;
-      transition: all ease 0.3s;
-      &:hover {
-        background-color: var(--primary-color-dark);
-        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1),
-          0 15px 12px rgba(0, 0, 0, 0.02);
-      }
-    }
   }
 }

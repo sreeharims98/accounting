@@ -19,7 +19,7 @@ export const CardComp = ({ onedata }) => {
         {onedata.about}
       </div>
       <button
-        className="button"
+        className="smallbutton"
         onClick={() => {
           var modal = document.getElementById(onedata.name);
           modal.style.display = "block";

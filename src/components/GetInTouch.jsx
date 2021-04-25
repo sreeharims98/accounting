@@ -13,12 +13,6 @@ const defaultData = {
 export const GetInTouch = () => {
   const [data, setdata] = useState(defaultData);
 
-  // useEffect(() => {
-  //   db.ref("responses").on("value", (res) => {
-  //     console.log(res.val());
-  //   });
-  // }, []);
-
   const onInputChange = (type, value) => {
     let newData = { ...data };
     newData[type] = value;

@@ -1,24 +1,27 @@
-import { Navbar } from "./components/Navbar";
+import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
-import { HomeBg } from "./components/HomeBg";
-import { IntroductionSec } from "./components/IntroductionSec";
-import { ServicesSec } from "./components/ServicesSec";
-import { WhyUsSec } from "./components/WhyUsSec";
-import { HappyCustomerSec } from "./components/HappyCustomerSec";
-import { GetInTouch } from "./components/GetInTouch";
-import { Footer } from "./components/Footer";
+import { LoginPage } from "./pages/LoginPage";
+import { HomePage } from "./pages/HomePage";
+import { AdminPage } from "./pages/AdminPage";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <HomeBg />
-      <IntroductionSec />
-      <ServicesSec />
-      <WhyUsSec />
-      <HappyCustomerSec />
-      <GetInTouch />
-      <Footer />
+      <BrowserRouter>
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/login" component={LoginPage} />
+        <Route
+          exact
+          path="/admin"
+          component={() => {
+            if (localStorage.getItem("finoxen") === "true") {
+              return <AdminPage />;
+            } else {
+              return <LoginPage />;
+            }
+          }}
+        />
+      </BrowserRouter>
     </div>
   );
 }
