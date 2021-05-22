@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./SlickCustomerSec.scss";
 import { CustomerCardComp } from "./CustomerCardComp";
 
-const SlickCustomerSec = () => {
+const SlickCustomerSec = ({ data }) => {
   const settings = {
     arrows: true,
     className: "center",
@@ -68,72 +68,19 @@ const SlickCustomerSec = () => {
   return (
     <div className="SlickCustomerSec">
       <Slider {...settings}>
-        <div>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <CustomerCardComp />
+        {data.map((item) => (
+          <div key={item.name}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <CustomerCardComp data={item} />
+            </div>
           </div>
-        </div>
-        <div>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <CustomerCardComp />
-          </div>
-        </div>
-        <div>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <CustomerCardComp />
-          </div>
-        </div>
-        <div>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <CustomerCardComp />
-          </div>
-        </div>
-        <div>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <CustomerCardComp />
-          </div>
-        </div>
-        <div>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <CustomerCardComp />
-          </div>
-        </div>
+        ))}
       </Slider>
     </div>
   );

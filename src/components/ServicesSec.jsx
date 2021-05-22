@@ -14,12 +14,10 @@ import shared from "../images/services/shared.jpg";
 import staff from "../images/services/staff.jpg";
 
 export const ServicesSec = () => {
-  const [data, setdata] = useState([
+  const [data] = useState([
     {
       name: "AUDITING & ASSURANCE",
       image: auditing,
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iusto, aliquam totam doloribus Velit iusto, aliquam totam doloribus totam doloribus",
       points: [
         "STATUTORY AUDITS",
         "TAX AUDITS",
@@ -34,8 +32,6 @@ export const ServicesSec = () => {
     {
       name: "INCOME TAX",
       image: tax,
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iusto, aliquam totam doloribus Velit iusto, aliquam totam doloribus totam doloribus",
       points: [
         "CONSULTANCY ON INCOME TAX MATTERS",
         "LIAISON WITH INCOME TAX AUTHORITIES",
@@ -51,8 +47,6 @@ export const ServicesSec = () => {
     {
       name: "GOODS & SERVICE TAX",
       image: tax,
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iusto, aliquam totam doloribus Velit iusto, aliquam totam doloribus totam doloribus",
       points: [
         "GST REGISTRATION",
         "CONSULTANCY ON SERVICES AS PER THE APPLICABILITY OF GST ACT 2017",
@@ -65,8 +59,6 @@ export const ServicesSec = () => {
     {
       name: "CORPORATE FINANCE",
       image: corporate,
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iusto, aliquam totam doloribus Velit iusto, aliquam totam doloribus totam doloribus",
       points: [
         "BUSINESS DUE DELLIGENCE",
         "TAX DUE DELLIGENCE",
@@ -84,8 +76,6 @@ export const ServicesSec = () => {
     {
       name: "ACCOUNTING SERVICES",
       image: accounting,
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iusto, aliquam totam doloribus Velit iusto, aliquam totam doloribus totam doloribus",
       points: [
         "PERIODIC MIS REPORT",
         "MANAGEMENT ACCOUNTING",
@@ -99,8 +89,6 @@ export const ServicesSec = () => {
     {
       name: "STAFF EVALUATION & TRAINING",
       image: staff,
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iusto, aliquam totam doloribus Velit iusto, aliquam totam doloribus totam doloribus",
       points: [
         "REVIEW QUALITY OF FINANCE AND ACCOUNTS STAFF",
         "ASSIST IN HIRING FINANCE PROFESSIONALS",
@@ -111,8 +99,6 @@ export const ServicesSec = () => {
     {
       name: "NRI SERVICES",
       image: nri,
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iusto, aliquam totam doloribus Velit iusto, aliquam totam doloribus totam doloribus",
       points: [
         "ALLOTMENT OF PAN",
         "TAX PLANNING",
@@ -127,8 +113,6 @@ export const ServicesSec = () => {
     {
       name: "CRISIS MANAGEMENT",
       image: crisis,
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iusto, aliquam totam doloribus Velit iusto, aliquam totam doloribus totam doloribus",
       points: [
         "BUSINESS OPERATIONS REVIEW",
         "CRITICAL FINANCIAL REVIEW",
@@ -143,8 +127,6 @@ export const ServicesSec = () => {
     {
       name: "BUSINESS VALUATION",
       image: business,
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iusto, aliquam totam doloribus Velit iusto, aliquam totam doloribus totam doloribus",
       points: [
         "FINANCIAL AND OPERATIONAL DUE DILIGENCE",
         "REVIEW OF HISTORICAL FINANCIAL DATA",
@@ -158,8 +140,6 @@ export const ServicesSec = () => {
     {
       name: "CORPORATE RISK",
       image: corporaterisk,
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iusto, aliquam totam doloribus Velit iusto, aliquam totam doloribus totam doloribus",
       points: [
         "COMPLY WITH RULES AND REGULATIONS",
         "RISK IDENTIFICATIONS",
@@ -172,8 +152,6 @@ export const ServicesSec = () => {
     {
       name: "SHARED CFO SERVICES",
       image: shared,
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iusto, aliquam totam doloribus Velit iusto, aliquam totam doloribus totam doloribus",
       points: [
         "IDEAL FOR SMEs",
         "COST EFFECTIVE",
@@ -189,8 +167,6 @@ export const ServicesSec = () => {
     {
       name: "IT SYSTEMS & ERP",
       image: shared,
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iusto, aliquam totam doloribus Velit iusto, aliquam totam doloribus totam doloribus",
       points: [
         "REVIEW OF EXISTING SOFTWARE",
         "STUDY REQUIREMENTS AT CLIENTS END",
@@ -217,14 +193,6 @@ export const ServicesSec = () => {
           <li style={{ width: 9 }}></li>
         </ul>
       </div>
-      {/* <div className="about">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iusto,
-        aliquam totam doloribus facere ex aliquid? Quod ratione error eum,
-        molestias, deserunt voluptas doloribus at voluptatem laboriosam rerum
-        aspernatur impedit. Sit a nesciunt, inventore doloremque, odit, iste
-        placeat asperiores natus consequuntur quos officiis fugiat at beatae
-        laudantium enim adipisci ullam.
-      </div> */}
 
       <div className="card-sec">
         {viewdata.map((onedata) => (

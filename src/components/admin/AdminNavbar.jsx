@@ -57,7 +57,14 @@ export const AdminNavbar = () => {
             CONTACT US
           </a> */}
 
-          <span>ADMIN</span>
+          <Link
+            to="/"
+            onClick={() => {
+              localStorage.removeItem("finoxen");
+            }}
+          >
+            <span>LOGOUT</span>
+          </Link>
         </div>
         <div className="icon">
           {/* <img src={MdMenu} alt="menu" onClick={myFunction} width="25px" /> */}

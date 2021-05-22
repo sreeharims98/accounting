@@ -48,10 +48,8 @@ export const GetInTouch = () => {
         </ul>
       </div>
       <div className="about">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iusto,
-        aliquam totam doloribus facere ex aliquid? Quod ratione error eum,
-        molestias, deserunt voluptas doloribus at voluptatem laboriosam rerum
-        aspernatur impedit.
+        Whether you have a question about services, pricing, or anything else,
+        Our team is ready to answer all your questions.
       </div>
       <form onSubmit={onsubmit}>
         <div className="top-sec">

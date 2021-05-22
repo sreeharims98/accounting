@@ -33,82 +33,80 @@ export const ContactUsSec = () => {
         </ul>
       </div>
 
-      <Row>
-        <Col md={2}></Col>
-        <Col md={20}>
-          {isloading === true ? (
-            <div className="loadingsec">
-              <Spin size="large" />
-            </div>
-          ) : (
-            <div>
-              {data.map((e) => (
-                <Card key={e[0]}>
-                  <Row>
-                    <Col
-                      span={24}
-                      style={{ display: "flex", alignItems: "center" }}
-                    >
-                      <i>
-                        <MdPerson className="contact-icon" />
-                      </i>
-                      <span>{e[1].name}</span>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col
-                      xs={24}
-                      md={12}
-                      style={{ display: "flex", alignItems: "center" }}
-                    >
-                      <i>
-                        <MdMail className="contact-icon" />
-                      </i>
-                      <span>{e[1].email}</span>
-                    </Col>
-                    <Col
-                      xs={24}
-                      md={12}
-                      style={{ display: "flex", alignItems: "center" }}
-                    >
-                      <i>
-                        <MdPhone className="contact-icon" />
-                      </i>
-                      <span>{e[1].number}</span>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col
-                      span={24}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                      }}
-                    >
-                      <i>
-                        <MdMessage className="contact-icon" />
-                      </i>
-                      <span>{e[1].message}</span>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col
-                      span={24}
-                      style={{ display: "flex", alignItems: "center" }}
-                    >
-                      <i>
-                        <MdDateRange className="contact-icon" />
-                      </i>
-                      <span className="date">{e[1].date.slice(0, 16)}</span>
-                    </Col>
-                  </Row>
-                </Card>
-              ))}
-            </div>
-          )}
-        </Col>
-        <Col md={2}></Col>
-      </Row>
+      {isloading === true ? (
+        <div className="loadingsec">
+          <Spin size="large" />
+        </div>
+      ) : (
+        <Row>
+          <Col md={2}></Col>
+          <Col md={20}>
+            {data.map((e) => (
+              <Card key={e[0]}>
+                <Row>
+                  <Col
+                    span={24}
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    <i>
+                      <MdPerson className="contact-icon" />
+                    </i>
+                    <span>{e[1].name}</span>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col
+                    xs={24}
+                    md={12}
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    <i>
+                      <MdMail className="contact-icon" />
+                    </i>
+                    <span>{e[1].email}</span>
+                  </Col>
+                  <Col
+                    xs={24}
+                    md={12}
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    <i>
+                      <MdPhone className="contact-icon" />
+                    </i>
+                    <span>{e[1].number}</span>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col
+                    span={24}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                    }}
+                  >
+                    <i>
+                      <MdMessage className="contact-icon" />
+                    </i>
+                    <span>{e[1].message}</span>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col
+                    span={24}
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    <i>
+                      <MdDateRange className="contact-icon" />
+                    </i>
+                    <span className="date">{e[1].date.slice(0, 16)}</span>
+                  </Col>
+                </Row>
+              </Card>
+            ))}
+          </Col>
+          <Col md={2}></Col>
+        </Row>
+      )}
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import React from "react";
 import "./CardComp.scss";
-import logo from "../../images/FINOXEN STRATAGEM.png";
 import { MdClose } from "react-icons/md";
 
 export const CardComp = ({ onedata }) => {
@@ -8,16 +7,16 @@ export const CardComp = ({ onedata }) => {
     <div className="CardComp">
       <img className="card-icon" src={onedata.image} alt="logo" />
       <div className="title-CardComp">{onedata.name}</div>
-      <div className="point-sec">
-        {/* <ul>
+      {/* <div className="point-sec"> */}
+      {/* <ul>
           <li>First point</li>
           <li>Second point</li>
           <li>Third point</li>
           <li>Fourth point</li>
           <li>Fifth point</li>
         </ul> */}
-        {onedata.about}
-      </div>
+      {/* {onedata.about} */}
+      {/* </div> */}
       <button
         className="smallbutton"
         onClick={() => {

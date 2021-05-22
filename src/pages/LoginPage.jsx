@@ -11,7 +11,7 @@ export const LoginPage = () => {
   const [password, setpassword] = useState("");
 
   const onsubmit = () => {
-    if (username === "admin" && password === "admin@123") {
+    if (username === "finoxen" && password === "finoxen@123") {
       localStorage.setItem("finoxen", "true");
       history.push("/admin");
     } else {
@@ -29,7 +29,7 @@ export const LoginPage = () => {
           alignItems: "center",
           flexDirection: "column",
           width: "100vw",
-          height: "100vh",
+          height: "90vh",
           backgroundColor: "#eeeeee",
         }}
       >

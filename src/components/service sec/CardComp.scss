@@ -1,6 +1,6 @@
 .CardComp {
   width: 240px;
-  min-height: 260px;
+  min-height: 200px;
   padding: 16px 10px;
   margin: 20px 10px;
   background-color: #fff;
@@ -15,9 +15,9 @@
   justify-content: space-between;
 
   transition: all ease-in-out 0.3s;
-  &:hover {
-    // box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.02);
-  }
+  // &:hover {
+  // box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.02);
+  // }
 
   .card-icon {
     width: auto;
@@ -162,6 +162,7 @@
     h3 {
       margin: 0;
       line-height: normal;
+      color: #fff;
     }
   }
 
@@ -172,6 +173,7 @@
     flex-wrap: wrap;
     // height: 80vh;
     overflow: auto;
+    padding: 0.5rem;
     img {
       width: 300px;
       padding: 0.5rem;

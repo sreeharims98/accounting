@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.scss";
 import logo from "../images/FINOXEN STRATAGEM.png";
-import logotext from "../images/FINOXEN STRATAGEM  text.png";
+// import logotext from "../images/FINOXEN STRATAGEM  text.png";
 
 import {
   FaFacebookF,
@@ -12,6 +12,7 @@ import {
   FaPhoneAlt,
 } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
+import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <div className="Footer">
@@ -53,6 +54,7 @@ export const Footer = () => {
             <a href="#services">&gt; Services</a>
             <a href="#customers">&gt; Customers</a>
             <a href="#contactus">&gt; Contact us</a>
+            <Link to="/admin">&gt; Admin</Link>
           </div>
         </div>
         <div className="contact-use-sec">
@@ -62,15 +64,28 @@ export const Footer = () => {
               <FaMapMarkerAlt
                 style={{ color: "#1da0f2", fontSize: "1.4rem" }}
               />
-              <div>1102 Saint Marys, Jackson Blvd, Chicago United State</div>
+              <div>
+                CORPORATE OFFICE:
+                <br /> VI/321 , IST FLOOR AMBALLUR , THRISSUR, KERALA - 680302
+              </div>
+            </div>
+            <div className="contact-point">
+              <FaMapMarkerAlt
+                style={{ color: "#1da0f2", fontSize: "1.4rem" }}
+              />
+              <div>
+                BRANCH OFFICE: <br /> DOOR NO.64/3141, IST FLOOR, PULLEPADY,
+                THAMMANAM, ROAD, KATHRIKADAVU, ERNAKULAM, KERALA - 682071
+              </div>
             </div>
             <div className="contact-point">
               <GrMail style={{ color: "#1da0f2", fontSize: "1.4rem" }} />
-              <div>examplemail.com</div>
+              <div>info@finoxenstratagem.in</div>
             </div>
             <div className="contact-point">
               <FaPhoneAlt style={{ color: "#1da0f2", fontSize: "1.4rem" }} />
-              <div>+91 9876543210</div>
+              <div>+91 9746463717,</div>
+              <div>+91 8075680501</div>
             </div>
           </div>
         </div>

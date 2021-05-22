@@ -14,8 +14,7 @@
   justify-content: space-between;
 
   transition: all ease-in-out 0.3s;
-  &:hover {
-  }
+
   .about {
     color: #505050;
     text-align: center;
@@ -32,15 +31,21 @@
       border-radius: 50%;
       padding: 0 10px;
     }
-    .right-sec {
-      .name {
-        font-size: 18px;
-        font-weight: 500;
-      }
-      .company-name {
-        font-size: 13px;
-        color: #8f8f8f;
-      }
+    .company-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1c1c1c;
     }
+    // .right-sec {
+    // .name {
+    //   font-size: 18px;
+    //   font-weight: 500;
+    // }
+    // .company-name {
+    //   font-size: 14px;
+    //   font-weight: 600;
+    //   color: #1c1c1c;
+    // }
+    // }
   }
 }

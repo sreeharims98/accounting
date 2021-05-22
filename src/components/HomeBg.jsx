@@ -1,6 +1,6 @@
 import React from "react";
 import "./HomeBg.scss";
-import bg1 from "../images/1.jpg";
+// import bg1 from "../images/1.jpg";
 
 export const HomeBg = () => {
   return (

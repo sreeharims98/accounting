@@ -29,16 +29,6 @@ export const IntroductionSec = () => {
           fit the specific needs of your business to help increase your
           productivity and profitability.
         </p>
-        <p>
-          We offer a wide spectrum of services that includes Company Formation
-          and Registration, Auditing and Assurance Services, Taxation,
-          Accounting and Payroll Outsourcing Services, Project Financing and
-          Technology Consulting. Our people work with you to build the value you
-          are looking for by providing insightful solutions, ideas, attention to
-          detail, expertise and results. Our reputation ties in building lasting
-          relationships with our clients and a focus on delivering value in all
-          we do.
-        </p>
       </div>
     </div>
   );
