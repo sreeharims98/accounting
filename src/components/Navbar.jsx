@@ -68,13 +68,13 @@ export const Navbar = () => {
           {nav === "t" ? (
             <MdMenu
               onClick={myFunction}
-              style={{ color: "white", fontSize: "2rem" }}
+              style={{ color: "#1c1c1c", fontSize: "2rem" }}
               className="hamburger"
             />
           ) : (
             <MdClose
               onClick={myFunction}
-              style={{ color: "white", fontSize: "2rem" }}
+              style={{ color: "#1c1c1c", fontSize: "2rem" }}
               className="hamburger"
             />
           )}

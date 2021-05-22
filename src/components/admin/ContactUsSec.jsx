@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Card, Col, Row, Spin } from "antd";
+import { Card, Col, message, Row, Spin } from "antd";
 import "./ContactUsSec.scss";
 import {
   MdPerson,
@@ -16,9 +16,14 @@ export const ContactUsSec = () => {
 
   useEffect(() => {
     db.ref("responses").on("value", (res) => {
-      let orgdata = Object.entries(res.val());
-      setdata(orgdata.reverse());
-      setisloading(false);
+      if (res.val() !== undefined && res.val() !== null) {
+        let orgdata = Object.entries(res?.val());
+        setdata(orgdata?.reverse());
+        setisloading(false);
+      } else {
+        setisloading(false);
+        message.warning("No responses found !");
+      }
     });
   }, []);
 

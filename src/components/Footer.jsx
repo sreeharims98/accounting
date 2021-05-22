@@ -7,9 +7,10 @@ import {
   FaFacebookF,
   FaTwitter,
   FaLinkedinIn,
-  FaInstagram,
+  // FaInstagram,
   FaMapMarkerAlt,
   FaPhoneAlt,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import { Link } from "react-router-dom";
@@ -25,8 +26,7 @@ export const Footer = () => {
             <span>Finoxen Stratagem</span>
           </a>
           <div className="company-about">
-            Let's make an achievement meeting new heights and adding value to
-            the invested capital with "Finoxen Stratagem"
+            Get your complete business compliance solution with us !
           </div>
           <div className="follow-us-sec">
             <span>Follow us</span>
@@ -40,9 +40,18 @@ export const Footer = () => {
               <div className="icon li">
                 <FaLinkedinIn />
               </div>
-              <div className="icon ig">
+              {/* <div className="icon ig">
                 <FaInstagram />
-              </div>
+              </div> */}
+              <a
+                href="https://wa.me/918075680501"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="icon wa">
+                  <FaWhatsapp />
+                </div>
+              </a>
             </div>
           </div>
         </div>

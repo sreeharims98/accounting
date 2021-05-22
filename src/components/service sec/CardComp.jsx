@@ -45,13 +45,10 @@ export const CardComp = ({ onedata }) => {
             <img src={onedata.image} alt={onedata.name} />
             <ul>
               {onedata?.points.map((point) => (
-                <li>{point}</li>
+                <li key={point}>{point}</li>
               ))}
             </ul>
           </div>
-          {/* <div className="modal-footer">
-            <h3>Modal Footer</h3>
-          </div> */}
         </div>
       </div>
     </div>

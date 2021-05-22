@@ -6,7 +6,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-color: #302e4e;
+  // background-color: #302e4e;
+  background-color: #e5e4e2;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,9 +44,9 @@
       }
       .company-about {
         padding-top: 1rem;
-        color: #dedede;
+        color: #1c1c1c;
         max-width: 240px;
-        text-align: justify;
+        text-align: center;
       }
       .follow-us-sec {
         padding-top: 1rem;
@@ -53,7 +55,7 @@
         justify-content: center;
         flex-direction: column;
         span {
-          color: #fff;
+          color: #1c1c1c;
         }
         .icons {
           width: 230px;
@@ -96,6 +98,14 @@
               color: #fff;
             }
           }
+          .wa {
+            color: #25d366;
+            transition: all ease-in-out 0.3s;
+            &:hover {
+              background-color: #25d366;
+              color: #fff;
+            }
+          }
           .ig {
             color: #db549b;
             transition: all ease-in-out 0.3s;
@@ -109,7 +119,8 @@
     }
     .useful-links-sec {
       padding: 1.5rem;
-      color: #dedede;
+      color: #1c1c1c;
+
       span {
         font-weight: 500;
         font-size: 24px;
@@ -128,7 +139,8 @@
     }
     .contact-use-sec {
       padding: 1.5rem;
-      color: #dedede;
+      color: #1c1c1c;
+
       span {
         font-weight: 500;
         font-size: 24px;
