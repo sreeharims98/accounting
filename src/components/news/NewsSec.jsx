@@ -134,7 +134,7 @@ export const NewsSec = () => {
       </div>
       <Carousel
         autoplay
-        autoplaySpeed={2000}
+        autoplaySpeed={1000}
         dotPosition="right"
         dots={false}
         // effect="fade"

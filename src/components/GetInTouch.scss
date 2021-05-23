@@ -1,5 +1,4 @@
 .GetInTouch {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,30 +95,6 @@
             width: 260px;
           }
         }
-      }
-    }
-  }
-  .whatsapp-sec {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    .icon {
-      font-size: 3rem;
-      margin: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
-      background-color: #25d366;
-
-      border-radius: 50%;
-      cursor: pointer;
-    }
-    .wa {
-      transition: all ease-in-out 0.3s;
-      color: #fff;
-      &:hover {
-        background-color: #1fb155;
       }
     }
   }

@@ -1,5 +1,6 @@
 import React from "react";
 import "./IntroductionSec.scss";
+import { FaWhatsapp } from "react-icons/fa";
 
 export const IntroductionSec = () => {
   return (
@@ -29,6 +30,17 @@ export const IntroductionSec = () => {
           fit the specific needs of your business to help increase your
           productivity and profitability.
         </p>
+      </div>
+      <div className="whatsapp-sec">
+        <a
+          href="https://wa.me/918075680501"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="icon wa">
+            <FaWhatsapp />
+          </div>
+        </a>
       </div>
     </div>
   );

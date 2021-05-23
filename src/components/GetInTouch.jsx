@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { db } from "../config";
 import "./GetInTouch.scss";
 import { Input, message as msg } from "antd";
-import { FaWhatsapp } from "react-icons/fa";
 
 const defaultData = {
   name: "",
@@ -104,18 +103,6 @@ export const GetInTouch = () => {
           <button type="submit">{isloading ? "SENDING" : "SEND"}</button>
         </div>
       </form>
-
-      <div className="whatsapp-sec">
-        <a
-          href="https://wa.me/918075680501"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="icon wa">
-            <FaWhatsapp />
-          </div>
-        </a>
-      </div>
     </div>
   );
 };

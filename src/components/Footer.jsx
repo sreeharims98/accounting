@@ -61,7 +61,7 @@ export const Footer = () => {
             <a href="#home">&gt; Home</a>
             <a href="#aboutus">&gt; About us</a>
             <a href="#services">&gt; Services</a>
-            <a href="#customers">&gt; Customers</a>
+            <a href="#customers">&gt; Testimonials</a>
             <a href="#contactus">&gt; Contact us</a>
             <Link to="/admin">&gt; Admin</Link>
           </div>

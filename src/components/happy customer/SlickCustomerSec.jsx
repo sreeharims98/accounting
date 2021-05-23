@@ -6,6 +6,7 @@ import "./SlickCustomerSec.scss";
 import { CustomerCardComp } from "./CustomerCardComp";
 
 const SlickCustomerSec = ({ data }) => {
+  console.log(data.length);
   const settings = {
     arrows: true,
     className: "center",
@@ -14,7 +15,7 @@ const SlickCustomerSec = ({ data }) => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: data.length > 3 ? 4 : 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -31,7 +32,7 @@ const SlickCustomerSec = ({ data }) => {
           className: "center",
           centerMode: true,
           // centerPadding: "-10px",
-          slidesToShow: 3,
+          slidesToShow: data.length >= 3 ? 3 : 2,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -44,7 +45,7 @@ const SlickCustomerSec = ({ data }) => {
           className: "center",
           centerMode: true,
           // centerPadding: "-10px",
-          slidesToShow: 2,
+          slidesToShow: data.length >= 2 ? 2 : 1,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -57,7 +58,7 @@ const SlickCustomerSec = ({ data }) => {
           className: "center",
           centerMode: true,
           // centerPadding: "-10px",
-          slidesToShow: 1,
+          slidesToShow: data.length >= 1 ? 1 : 0,
           slidesToScroll: 1,
           initialSlide: 1,
         },
