@@ -89,7 +89,7 @@ export const Footer = () => {
             </div>
             <div className="contact-point">
               <GrMail style={{ color: "#1da0f2", fontSize: "1.4rem" }} />
-              <div>info@finoxenstratagem.in</div>
+              <div>info@finoxen.in</div>
             </div>
             <div className="contact-point">
               <FaPhoneAlt style={{ color: "#1da0f2", fontSize: "1.4rem" }} />

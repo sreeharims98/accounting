@@ -8,18 +8,20 @@ import { HappyCustomerSec } from "../components/HappyCustomerSec";
 import { GetInTouch } from "../components/GetInTouch";
 import { Footer } from "../components/Footer";
 import { QuickLinkSec } from "../components/QuickLinkSec";
+import { NewsSec } from "../components/news/NewsSec";
 
 export const HomePage = () => {
   return (
     <div className="HomePage">
       <Navbar />
       <HomeBg />
-      <QuickLinkSec />
+      <NewsSec />
       <IntroductionSec />
       <ServicesSec />
       <WhyUsSec />
       <HappyCustomerSec />
       <GetInTouch />
+      <QuickLinkSec />
       <Footer />
     </div>
   );

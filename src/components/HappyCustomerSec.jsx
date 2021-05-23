@@ -30,7 +30,7 @@ export const HappyCustomerSec = () => {
 
   return (
     <div className="HappyCustomerSec" id="customers">
-      <div className="title">Our Happy Customers</div>
+      <div className="title">Testimonials</div>
       <div className="underline">
         <ul>
           <li style={{ width: 38 }}></li>

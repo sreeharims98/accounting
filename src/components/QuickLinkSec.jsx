@@ -1,10 +1,14 @@
 import React from "react";
 import "./QuickLinkSec.scss";
 
+import gst from "../images/links/gst.jpg";
+import incometax from "../images/links/incometax.gif";
+import mca from "../images/links/mca.jpg";
+
 export const QuickLinkSec = () => {
   return (
     <div className="QuickLinkSec">
-      <div className="title">Quick Links & Updates</div>
+      <div className="title">Quick Links</div>
       <div className="underline">
         <ul>
           <li style={{ width: 38 }}></li>
@@ -19,7 +23,7 @@ export const QuickLinkSec = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            GST
+            <img src={gst} alt="gst" />
           </a>
         </div>
         <div className="one-link">
@@ -28,7 +32,7 @@ export const QuickLinkSec = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            INCOME TAX
+            <img src={incometax} alt="income tax" />
           </a>
         </div>
         <div className="one-link">
@@ -37,7 +41,7 @@ export const QuickLinkSec = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            MCA
+            <img src={mca} alt="mca" />
           </a>
         </div>
       </div>

@@ -56,7 +56,7 @@ export const Navbar = () => {
             WHY US
           </a>
           <a href="#customers" onClick={myFunction}>
-            CUSTOMERS
+            TESTIMONIALS
           </a>
           <a href="#contactus" onClick={myFunction}>
             CONTACT US

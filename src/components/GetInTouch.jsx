@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { db } from "../config";
 import "./GetInTouch.scss";
 import { Input, message as msg } from "antd";
+import { FaWhatsapp } from "react-icons/fa";
 
 const defaultData = {
   name: "",
@@ -12,6 +13,7 @@ const defaultData = {
 
 export const GetInTouch = () => {
   const [data, setdata] = useState(defaultData);
+  const [isloading, setisloading] = useState(false);
 
   const onInputChange = (type, value) => {
     let newData = { ...data };
@@ -21,18 +23,29 @@ export const GetInTouch = () => {
 
   const onsubmit = (e) => {
     e.preventDefault();
-    let payload = { ...data, date: new Date().toString() };
-    db.ref("responses")
-      .push()
-      .set(payload)
-      .then(() => {
-        msg.success("Your response has been successfully recorded");
-        setdata(defaultData);
-      })
-      .catch((err) => {
-        msg.error("An error occured !");
-        console.log(err);
-      });
+    if (
+      data.email !== "" &&
+      data.name !== "" &&
+      data.phone !== "" &&
+      data.message !== ""
+    ) {
+      setisloading(true);
+      let payload = { ...data, date: new Date().toString() };
+      db.ref("responses")
+        .push()
+        .set(payload)
+        .then(() => {
+          setisloading(false);
+          msg.success("Your response has been successfully recorded");
+          setdata(defaultData);
+        })
+        .catch((err) => {
+          msg.error("An error occured !");
+          console.log(err);
+        });
+    } else {
+      msg.warning("Please fill all the fields");
+    }
   };
 
   const { name, email, number, message } = data;
@@ -55,18 +68,21 @@ export const GetInTouch = () => {
         <div className="top-sec">
           <div className="left-sec">
             <Input
+              required
               type="text"
               placeholder="Name"
               value={name}
               onChange={(e) => onInputChange("name", e.target.value)}
             />
             <Input
+              required
               type="email"
               placeholder="Email"
               value={email}
               onChange={(e) => onInputChange("email", e.target.value)}
             />
             <Input
+              required
               type="number"
               placeholder="Phone number"
               value={number}
@@ -75,6 +91,7 @@ export const GetInTouch = () => {
           </div>
           <div className="right-sec">
             <Input.TextArea
+              required
               type="text"
               placeholder="Message"
               maxLength="500"
@@ -84,9 +101,21 @@ export const GetInTouch = () => {
           </div>
         </div>
         <div className="button-sec">
-          <button type="submit">SEND</button>
+          <button type="submit">{isloading ? "SENDING" : "SEND"}</button>
         </div>
       </form>
+
+      <div className="whatsapp-sec">
+        <a
+          href="https://wa.me/918075680501"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="icon wa">
+            <FaWhatsapp />
+          </div>
+        </a>
+      </div>
     </div>
   );
 };
