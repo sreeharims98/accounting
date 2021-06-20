@@ -3,15 +3,16 @@ import "./App.css";
 import { LoginPage } from "./pages/LoginPage";
 import { HomePage } from "./pages/HomePage";
 import { AdminPage } from "./pages/AdminPage";
+import { ScrollToTop } from "./ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <ScrollToTop />
         <Route exact path="/" component={HomePage} />
         <Route exact path="/login" component={LoginPage} />
         <Route
-          exact
           path="/admin"
           component={() => {
             if (localStorage.getItem("finoxen") === "true") {

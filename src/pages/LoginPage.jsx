@@ -13,7 +13,7 @@ export const LoginPage = () => {
   const onsubmit = () => {
     if (username === "finoxen" && password === "finoxen@123") {
       localStorage.setItem("finoxen", "true");
-      history.push("/admin");
+      history.push("/admin/updates");
     } else {
       message.error("Username or Password is incorrect !");
     }

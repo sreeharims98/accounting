@@ -63,7 +63,7 @@ export const Footer = () => {
             <a href="#services">&gt; Services</a>
             <a href="#customers">&gt; Testimonials</a>
             <a href="#contactus">&gt; Contact us</a>
-            <Link to="/admin">&gt; Admin</Link>
+            <Link to="/admin/updates">&gt; Admin</Link>
           </div>
         </div>
         <div className="contact-use-sec">

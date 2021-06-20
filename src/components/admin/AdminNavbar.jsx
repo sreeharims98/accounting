@@ -12,6 +12,7 @@ export const AdminNavbar = () => {
     window.scrollTo(0, 0);
     nav === "t" ? setnav("tr") : setnav("t");
   }
+
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
@@ -41,13 +42,13 @@ export const AdminNavbar = () => {
           </div>
         </Link>
         <div className="right-sec">
-          {/* <a href="#aboutus" onClick={myFunction}>
-            ABOUT US
-          </a>
-          <a href="#services" onClick={myFunction}>
-            SERVICES
-          </a>
-          <a href="#whyus" onClick={myFunction}>
+          <Link to="/admin/updates" onClick={myFunction}>
+            Updates
+          </Link>
+          <Link to="/admin/contactus" onClick={myFunction}>
+            Contact us
+          </Link>
+          {/* <a href="#whyus" onClick={myFunction}>
             WHY US
           </a>
           <a href="#customers" onClick={myFunction}>

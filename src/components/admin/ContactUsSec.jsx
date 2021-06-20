@@ -44,8 +44,8 @@ export const ContactUsSec = () => {
         </div>
       ) : (
         <Row>
-          <Col md={2}></Col>
-          <Col md={20}>
+          <Col xs={0} md={2}></Col>
+          <Col xs={24} md={20}>
             {data.map((e) => (
               <Card key={e[0]}>
                 <Row>
@@ -109,7 +109,7 @@ export const ContactUsSec = () => {
               </Card>
             ))}
           </Col>
-          <Col md={2}></Col>
+          <Col xs={0} md={2}></Col>
         </Row>
       )}
     </div>
